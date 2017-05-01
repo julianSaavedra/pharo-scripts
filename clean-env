@@ -1,0 +1,3 @@
+#!/bin/sh
+find . -type f -not \( -name 'get-last-image' -o -name 'clean-env' -o -name 'startup.st' -o -name 'user-properties' \) -print0 | xargs -0 rm --
+find . -type d -not -name '.' -print0 | xargs -0 rm -r

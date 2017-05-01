@@ -1,0 +1,2 @@
+#!/bin/sh
+curl get.pharo.org/64/stable+vmLatest | sh
