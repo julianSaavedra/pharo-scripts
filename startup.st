@@ -50,7 +50,7 @@ StartupPreferencesLoader default executeAtomicItems:
     (StartupAction
       name: 'Upgrade FPS to 60'
       code: [ WorldState MinCycleLapse: 16 ]
-      runOnce: true.
+      runOnce: true).
 
     (StartupAction
       name: 'Show any startup action errors'
