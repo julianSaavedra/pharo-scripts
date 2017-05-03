@@ -21,6 +21,11 @@ StartupPreferencesLoader default executeAtomicItems:
       runOnce: true).
 
     (StartupAction
+      name: 'Set up UI theme'
+      code: [ Pharo3Theme beCurrent ]
+      runOnce: true).
+
+    (StartupAction
       name: 'Setup syntax highlighting style'
       code: [ SHPreferences setStyleTableNamed: 'Solarized' ]
       runOnce: true).
@@ -40,11 +45,6 @@ StartupPreferencesLoader default executeAtomicItems:
           newLineBeforeFirstCascade: false;
           newLineBeforeFirstCascade: true;
           yourself ]
-      runOnce: true).
-
-    (StartupAction
-      name: 'Set up UI theme'
-      code: [ Pharo3Theme beCurrent ]
       runOnce: true).
 
     (StartupAction
